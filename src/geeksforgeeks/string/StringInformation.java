@@ -3,15 +3,6 @@ package geeksforgeeks.string;
 public class StringInformation {
 
     /*
-     * This will print all permutation of String.
-     * Permutation of string "ABC" will be "ABC", "BAC", "CAB", "BCA", "CBA", "ACB"
-     *
-     * For string of length n, there are n! possible arrangements are possible.
-     *
-     * Time Complexity :
-     * Space Complexity :
-     *
-     * Learning:
      * String toString() Method :
      *      When we print object reference, internally it is called toString Method
      *      ClassName@HashCode, UID for objects
@@ -53,24 +44,7 @@ public class StringInformation {
      * StringBuilder
      *      Mutable but not thread safe.
      */
-
     public static void main(String[] args) {
-        String abc = "ABC";
-        permute(abc, 0 , abc.length()-1);
-    }
 
-    public static void permute(String string, int leftIndex, int rightIndex) {
-        System.out.println(string);
-        swap(string, leftIndex, rightIndex);
-        System.out.println(string);
-    }
-
-    public static void swap(String string, int index1, int index2){
-        char[] charString = string.toCharArray();
-        char temp = charString[index1];
-        charString[index1] = charString[index2];
-        charString[2] = temp;
-        string = String.copyValueOf(charString);
-        System.out.println(string);
     }
 }
