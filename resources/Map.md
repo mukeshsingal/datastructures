@@ -151,7 +151,7 @@ class Temp{
 }
 
 class Test{
-    HashMap map = new HashMap<>();
+    HashMap<Temp, String> map = new HashMap<>();
     Temp t = new Temp();
     map.put(t, "Mukesh");
     System.out.println(m);
@@ -168,3 +168,40 @@ class Test{
     System.out.print(m); //output: t=Mukesh
 }
 ``` 
+
+## Sorted Map
+* Child interface of Map interface. 
+* Used when we want to represent Group of key values pairs based on sorted Order of keys
+
+```java
+interface SortedMap{
+    Object firstKey();
+    Object lastKey();
+    SortedMap headMap(Object key); // return Map of keys below specified
+    SortedMap headMap(Object key); //return Map of keys greater than or equal to key
+    SortedMap subMap(Object startKey, Object endkey); //return submap between Keys 
+    Comparator comparator(); 
+}
+```
+
+* Inner Data Structure Red black Tree
+* Insertion order isn't preserved
+* All element will be inserted to sorted order of keys not values.
+* Duplicate keys are not allowed 
+* If we depend on default Sorted order then keys should be homegenious and comaprable    
+* In Custom defined Sorted Order keys may not be homogeneous and comparable
+
+Null Acceptance: 
+1. For Non Empty TreeMap if we try to inserted key with null, JVM throws NullPointerException
+
+Constructors:
+
+```java
+class Tree{
+    TreeMap t = new java.util.TreeMap<>(); //default sorting order
+    TreeMap t = new java.util.TreeMap<>(java.util.Comparator c); //custom sorting order
+    TreeMap t = new java.util.TreeMap<>(Map c); 
+    TreeMap t = new java.util.TreeMap<>(SortedMap c);
+    
+}
+```
