@@ -88,4 +88,83 @@ class Test{
 `Map map = Collections.synchronizeMap(HashMap m);`
 
 
+## LinkedHashMap
+|HashSet|LinkedHashSet|
+|---|---|
+| LinkedSet is child of HashSet | HashSet |
+| In LinkedHashSet insertion order is preserved | Insertion order isn't preserved in HashSet|
+| Inner Data Structure is HashTable | Inner Data Structure is LinkedList and HashTable |
  
+Similarly 
+
+|HashMap|LinkedHashMap|
+|---|---|
+| HashMap | LinkedHashMap is child of HashMap |
+| Insertion order isn't preserved in HashSet |  In LinkedHashSet insertion order is preserved |
+| Inner Data Structure is HashTable | Inner Data Structure is LinkedList and HashTable |
+ 
+> In HashMap and LinkedHashMap JVM will use `.equals()` method to check duplicate keys.
+```java
+class temp{
+    HashMap<Integer, String> map = new HashMap<>();
+    Integer key1 = new Integer(10);
+    Integer key2 = new Integer(10);
+
+    map.put(key1, "value1");
+    map.put(key2, "value2");
+
+    System.out.println(map); //output: {10=value2}
+}
+```
+## IdentityHashMap
+
+> It is exactly same as HashMap in methods and constructors except in IdentityHashMap JVM will use `==` operator to check duplicate keys.
+
+```java
+class temp{
+    IdentityHashMap<Integer, String> map = new IdentityHashMap<>();
+    Integer key1 = new Integer(10);
+    Integer key2 = new Integer(10);
+
+    map.put(key1, "value1");
+    map.put(key2, "value2");
+
+    System.out.println(map); //output: {10=value1, 10=value2}
+}
+```
+
+## WeakHashMap
+It is exactly same as HashMap except the following difference. 
+
+In case of hashMap even though object has no reference, it is not eligible for Garbage Collection if it is associate with 
+hashMap. HashMap dominates GC. But in case of WeakHashMap, it is eligible for GC, even though object is associated with 
+WeakHashMap.
+
+```java
+class Temp{
+    public String toString(){
+        return "temp";
+    }
+    public void finialize(){
+        System.out.print("CleanUp is done");
+    }
+}
+
+class Test{
+    HashMap map = new HashMap<>();
+    Temp t = new Temp();
+    map.put(t, "Mukesh");
+    System.out.println(m);
+    t=null;
+    System.gcc(); 
+    
+    /*
+     * Here Garbage Collector cannot destroy 't' object but it is associated with HashMap. But
+     * In WeakHashMap, Garbage Collector can destory object associated with WeakHashMap if object lost its
+     * reference. 
+     */
+    
+    Thread.sleep(5000);
+    System.out.print(m); //output: t=Mukesh
+}
+``` 
