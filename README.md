@@ -1,4 +1,7 @@
 # Data Structures and Algorithms in Java
+1. Stack
+2. Queue
+
 
 ### Java Docs
 1. [String](src/geeksforgeeks/string/StringInformation.java)
