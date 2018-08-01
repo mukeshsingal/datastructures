@@ -24,7 +24,6 @@ public class MyQueue<T> {
             }
 
             array[rear] = item;
-            System.out.println("Added " + item);
         }
     }
 
@@ -43,7 +42,7 @@ public class MyQueue<T> {
         } else {
 
             T item = array[front];
-            System.out.println("Removed " + item);
+
             if (front == rear) {
                 front = rear = -1;
             } else {
@@ -74,6 +73,5 @@ public class MyQueue<T> {
         queue.deQueue();
         queue.deQueue();
         queue.deQueue();
-
     }
 }

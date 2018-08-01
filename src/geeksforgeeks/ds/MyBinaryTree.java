@@ -15,6 +15,11 @@ public class MyBinaryTree<T> {
             this.key = key;
             left = right = null;
         }
+
+        @Override
+        public String toString() {
+            return key.toString();
+        }
     }
 
     /*LNR*/
@@ -44,12 +49,31 @@ public class MyBinaryTree<T> {
         System.out.print(node.key + " ");
     }
 
+    public void levelOrderTraversal() {
+        MyQueue<Node> queue = new MyQueue<>(10);
+        if (root == null) {
+            System.out.println("There is no node present in tree");
+        } else {
+            System.out.println("\nLevel Order Traversal");
+            queue.enQueue(root);
+            while (!queue.isEmpty()){
+                Node node = queue.deQueue();
+                System.out.print (node.key + " ");
+                if(node.left !=null )
+                    queue.enQueue(node.left);
+                if(node.right!=null)
+                    queue.enQueue(node.right);
+            }
+        }
+
+    }
+
     public static void main(String[] args) {
         MyBinaryTree<Integer> tree = new MyBinaryTree(1);
         tree.root.left = new MyBinaryTree.Node(2);
         tree.root.right = new MyBinaryTree.Node(3);
         tree.root.left.left = new MyBinaryTree.Node(4);
-        tree.root.left.right = new MyBinaryTree.Node(5);
+        tree.root.right.left = new MyBinaryTree.Node(5);
 
         System.out.println("InOrder");
         tree.inOrderTraversal(tree.root);
@@ -57,6 +81,8 @@ public class MyBinaryTree<T> {
         tree.preOrderTraversal(tree.root);
         System.out.println("\nPostOrder");
         tree.postOrderTraversal(tree.root);
+
+        tree.levelOrderTraversal();
     }
 }
 
