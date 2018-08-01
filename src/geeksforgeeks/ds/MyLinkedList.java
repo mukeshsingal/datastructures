@@ -1,4 +1,4 @@
-package geeksforgeeks.mydatastructures;
+package geeksforgeeks.ds;
 
 public class MyLinkedList<T> {
 
