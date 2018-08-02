@@ -1,4 +1,4 @@
-package geeksforgeeks.string;
+package geeksforgeeks.problems.string;
 
 public class StringInformation {
 

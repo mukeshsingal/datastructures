@@ -1,6 +1,5 @@
-package geeksforgeeks.string;
+package geeksforgeeks.problems.string;
 
-import java.util.Arrays;
 import java.util.Map;
 import java.util.TreeMap;
 

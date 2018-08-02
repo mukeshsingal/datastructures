@@ -6,7 +6,7 @@
 5. Graph
 
 ### Java Docs
-1. [String](src/geeksforgeeks/string/StringInformation.java)
+1. [String](src/geeksforgeeks/problems/string/StringInformation.java)
 2. [Map](resources/Map.md)
 
 ### Data Structures
@@ -17,10 +17,9 @@
 5. [LinkedList](resources/algorithms/LinkedList/linkedList.md)
 
 
-Queue
 
-|Questions|
-|---|
+|Category| |
+|---|--
 | Suppose there are n bags containing different amount if chocolets and there is wizard and a kid. at every second the kid eat all the choloates from the bag containing maximum numbe rof chocolates and the wizard refils it with the half of chocolates it was containing earlier. Find how many chocolates has the kid eaten at t seconds  | 
 | Suppose there are million of number and you have to print max 20 elements| 
 | Given an range of number count the numbers which have same first and last digits | 
