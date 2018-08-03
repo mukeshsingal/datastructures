@@ -1,17 +1,18 @@
 package geeksforgeeks.ds;
 
 public class MyBinaryTree<T> {
-    Node root;
+    public Node root;
 
-    MyBinaryTree(T key) {
+    public MyBinaryTree(T key) {
         root = new Node(key);
     }
 
     public static class Node<T> {
-        Node left, right;
-        T key;
+        public Node left;
+        public Node right;
+        public T key;
 
-        Node(T key) {
+        public Node(T key) {
             this.key = key;
             left = right = null;
         }
