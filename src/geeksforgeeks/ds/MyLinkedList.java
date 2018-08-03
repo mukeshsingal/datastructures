@@ -8,7 +8,7 @@ public class MyLinkedList<T> {
         head = new Node(key);
     }
 
-    MyLinkedList() {
+    public MyLinkedList() {
         head = null;
     }
 
@@ -16,7 +16,6 @@ public class MyLinkedList<T> {
         Node<T> newNode = new Node<>(key);
         newNode.next = head;
         head = newNode;
-        System.out.println(key + " : Added at Start ");
     }
     public T removeFromStart() {
         if(head == null)
@@ -27,8 +26,6 @@ public class MyLinkedList<T> {
         else{
             T key = (T) head.key;
             head= head.next;
-
-            System.out.println(key + " : Removed from Start ");
             return key;
         }
     }
@@ -44,8 +41,6 @@ public class MyLinkedList<T> {
         } else {
             head = new Node(key);
         }
-
-        System.out.println(key + " : Added at End ");
     }
 
     public T removedFromEnd() {
@@ -72,7 +67,6 @@ public class MyLinkedList<T> {
             }
             T key = (T) nextNode.key;
             node.next = null;
-            System.out.println(key + " : Removed from End ");
             return key;
         }
     }
@@ -96,7 +90,6 @@ public class MyLinkedList<T> {
                 newNode.next = tempNode.next;
                 tempNode.next = newNode;
             }
-            System.out.println(key + " : Added after Index " + index);
         } else {
             System.out.println(": Index doesn't exist");
         }

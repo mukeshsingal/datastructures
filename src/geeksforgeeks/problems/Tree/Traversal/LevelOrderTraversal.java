@@ -5,6 +5,11 @@ import geeksforgeeks.ds.MyQueue;
 
 public class LevelOrderTraversal {
 
+    /**
+     *  Time Complexity : O(N) : because you are iterating over elements exactly once
+     *  Space complexity: O(N) : Usage of Queue
+     *
+     * */
     public static void levelOrderTraversal(MyBinaryTree.Node root) {
         MyQueue<MyBinaryTree.Node> queue = new MyQueue<>(10);
         if (root == null) {
@@ -12,12 +17,12 @@ public class LevelOrderTraversal {
         } else {
             System.out.println("\nLevel Order Traversal");
             queue.enQueue(root);
-            while (!queue.isEmpty()){
+            while (!queue.isEmpty()) {
                 MyBinaryTree.Node node = queue.deQueue();
-                System.out.print (node.key + " ");
-                if(node.left !=null )
+                System.out.print(node.key + " ");
+                if (node.left != null)
                     queue.enQueue(node.left);
-                if(node.right!=null)
+                if (node.right != null)
                     queue.enQueue(node.right);
             }
         }
