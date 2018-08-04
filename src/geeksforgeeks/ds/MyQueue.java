@@ -5,6 +5,7 @@ public class MyQueue<T> {
     private int front;
     private int rear;
     private T[] array;
+    private static int totalElementsInQueue = 0 ;
 
     public MyQueue(int size) {
         this.size = size;
@@ -22,7 +23,7 @@ public class MyQueue<T> {
             } else {
                 rear = (rear + 1) % size;
             }
-
+            totalElementsInQueue++;
             array[rear] = item;
         }
     }
@@ -48,9 +49,14 @@ public class MyQueue<T> {
             } else {
                 front = (front + 1) % size;
             }
+            totalElementsInQueue--;
             return item;
 
         }
+    }
+
+    public static int size(){
+        return totalElementsInQueue;
     }
 
     public static void main(String[] args) {
