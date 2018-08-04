@@ -7,6 +7,9 @@ public class MyBinaryTree<T> {
         root = new Node(key);
     }
 
+    public MyBinaryTree() {
+    }
+
     public static class Node<T> {
         public Node left;
         public Node right;

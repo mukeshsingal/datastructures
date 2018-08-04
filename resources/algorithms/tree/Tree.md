@@ -11,6 +11,16 @@
 
 
 ### BST
+Non Linear DataStructures 
+To store modifiable we can use array or linked list. 
+Running time of operations if 
+
+| Operation | Array | LinkedList | Tree |
+|---|---|---|---|
+|search()|O(N)| O
+|Insert ()|O(1)|
+|remove()|Q(1)|
+
 
 |S.N|Description|Difficulty|Solution|
 |---|---|---|---|
@@ -21,3 +31,6 @@
 
 
 # MISC
+Segment Tree isn't implemented: 
+AVL tree : https://www.youtube.com/watch?v=4zQV3j2X9mU&index=17&list=PLqM7alHXFySHCXD7r1J0ky9Zg_GBB1dbk
+ 

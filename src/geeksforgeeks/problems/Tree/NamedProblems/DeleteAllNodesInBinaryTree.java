@@ -31,14 +31,7 @@ public class DeleteAllNodesInBinaryTree {
     }
 
     private static void deleteTree(MyBinaryTree tree) {
-        MyQueue<MyBinaryTree.Node> queue = new MyQueue<>(20);
-        queue.enQueue(tree.root);
-        while (!queue.isEmpty()){
-            MyBinaryTree.Node node = queue.deQueue();
-            if(node.left == null) queue.enQueue(node.left);
-            if(node.right == null) queue.enQueue(node.right);
-            node = null;
-        }
+        tree.root = null;
         if(tree.root == null){
             System.out.println("All the nodes has been deleted");
         }
