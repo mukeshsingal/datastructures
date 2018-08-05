@@ -5,7 +5,7 @@ public class MyQueue<T> {
     private int front;
     private int rear;
     private T[] array;
-    private static int totalElementsInQueue = 0 ;
+    private int totalElementsInQueue = 0 ;
 
     public MyQueue(int size) {
         this.size = size;
@@ -55,7 +55,7 @@ public class MyQueue<T> {
         }
     }
 
-    public static int size(){
+    public int size(){
         return totalElementsInQueue;
     }
 
