@@ -15,11 +15,15 @@ Non Linear DataStructures
 To store modifiable we can use array or linked list. 
 Running time of operations if 
 
-| Operation | Array | LinkedList | Tree |
+| Operation | Array (Unsorted)| LinkedList |Array Sorted| Tree |
 |---|---|---|---|
-|search()|O(N)| O
-|Insert ()|O(1)|
-|remove()|Q(1)|
+|search()|O(N)| O(N)| O(log n)|O(log N) |
+|Insert ()|O(1)| O(1)| O(N) | O(log N)|
+|remove()|Q(1)| O(N)| O(N) |O(log N)|
+
+
+BST is a binary tree in which for each node, value of all the nodes in left subtree is lesser 
+and value if all the nodes on right sub tree is greater. 
 
 
 |S.N|Description|Difficulty|Solution|

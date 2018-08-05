@@ -53,40 +53,70 @@ public class MyBinaryTree<T> {
         System.out.print(node.key + " ");
     }
 
-    public void levelOrderTraversal() {
+    public void levelOrderTraversal(Node root) {
         MyQueue<Node> queue = new MyQueue<>(10);
         if (root == null) {
             System.out.println("There is no node present in tree");
         } else {
             System.out.println("\nLevel Order Traversal");
             queue.enQueue(root);
-            while (!queue.isEmpty()){
+            while (!queue.isEmpty()) {
                 Node node = queue.deQueue();
-                System.out.print (node.key + " ");
-                if(node.left !=null )
+                System.out.print(node.key + " ");
+                if (node.left != null)
                     queue.enQueue(node.left);
-                if(node.right!=null)
+                if (node.right != null)
                     queue.enQueue(node.right);
             }
         }
 
     }
 
+    /**
+     * insert the key into the binary tree at first position available in level order.
+     */
+    public void insert(T key) {
+        MyQueue<Node> queue = new MyQueue<>(20);
+        if (root == null) {
+            root = new Node(key);
+        } else {
+            queue.enQueue(root);
+            while (!queue.isEmpty()) {
+                Node node = queue.deQueue();
+                if (node.left == null) {
+                    node.left = new Node(key);
+                    break;
+                } else {
+                    queue.enQueue(node.left);
+                }
+                if (node.right == null) {
+                    node.right = new Node(key);
+                    break;
+                } else {
+                    queue.enQueue(node.right);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        MyBinaryTree<Integer> tree = new MyBinaryTree(1);
-        tree.root.left = new MyBinaryTree.Node(2);
-        tree.root.right = new MyBinaryTree.Node(3);
-        tree.root.left.left = new MyBinaryTree.Node(4);
-        tree.root.right.left = new MyBinaryTree.Node(5);
+        MyBinaryTree<Integer> tree = new MyBinaryTree();
+        tree.insert(1);
+        tree.insert(2);
+        tree.insert(3);
+        tree.insert(4);
+        tree.insert(5);
 
         System.out.println("InOrder");
         tree.inOrderTraversal(tree.root);
+
         System.out.println("\nPreOrder");
         tree.preOrderTraversal(tree.root);
+
         System.out.println("\nPostOrder");
         tree.postOrderTraversal(tree.root);
 
-        tree.levelOrderTraversal();
+        tree.levelOrderTraversal(tree.root);
     }
 }
 
