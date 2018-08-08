@@ -2,7 +2,7 @@ package geeksforgeeks.ds;
 
 public class MyLinkedList<T> {
 
-    Node head;
+    public Node head;
 
     MyLinkedList(T key) {
         head = new Node(key);
@@ -105,8 +105,8 @@ public class MyLinkedList<T> {
     }
 
     public class Node<T> {
-        T key;
-        Node next;
+        public T key;
+        public Node next;
 
         Node(T key) {
             this.key = key;
