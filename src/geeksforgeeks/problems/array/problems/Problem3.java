@@ -1,4 +1,4 @@
-package geeksforgeeks.problems.array.search;
+package geeksforgeeks.problems.array.problems;
 
 public class Problem3 {
     //Find the Number Occurring Odd Number of Times

@@ -1,4 +1,4 @@
-package geeksforgeeks.problems.array.search;
+package geeksforgeeks.problems.array.problems;
 
 /**
  * Find the Missing Number
