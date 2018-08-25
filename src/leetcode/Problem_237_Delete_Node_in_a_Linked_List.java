@@ -1,8 +1,5 @@
 package leetcode;
 
-public class Problem_237_Delete_Node_in_a_Linked_List {
-}
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
