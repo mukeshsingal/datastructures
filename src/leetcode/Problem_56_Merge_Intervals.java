@@ -1,5 +1,9 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Problem_56_Merge_Intervals {
     public List<Interval> merge(List<Interval> intervals) {
         if(intervals.size() == 0) return new ArrayList<>();
@@ -23,4 +27,11 @@ public class Problem_56_Merge_Intervals {
         resList.add(new Interval(s, end[end.length - 1]));
         return resList;
     }
+}
+
+class Interval{
+    int start;
+    int end;
+    Interval(int start, int end) { this.start= start ; this.end = end;}
+
 }
