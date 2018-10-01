@@ -16,7 +16,7 @@ import java.util.HashMap;
  * // maximum distance for 4 is 10-5 = 5
  *
  */
-public class Easy_Problem_17 {
+public class Easy_Problem_7 {
     public static void main(String[] args) {
         int arr[] = {3, 2, 1, 2, 1, 4, 5, 8, 6, 7, 4, 2};
 
