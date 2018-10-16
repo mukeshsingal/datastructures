@@ -1,10 +1,26 @@
 package geeksforgeeks.problems.Tree.Traversal;
 
-import geeksforgeeks.ds.MyBinaryTree;
 import geeksforgeeks.ds.MyLinkedStack;
 import geeksforgeeks.ds.MyQueue;
 
 public class BinaryTreeUtil {
+
+    public static class Node<T> {
+        public Node left;
+        public Node right;
+        public T key;
+
+        public Node(T key) {
+            this.key = key;
+            left = right = null;
+        }
+
+        @Override
+        public String toString() {
+            return key.toString();
+        }
+    }
+
     /**
      * This is full binary tree.
      * 1
@@ -13,22 +29,34 @@ public class BinaryTreeUtil {
      * / \
      * 4   5
      */
-    public static MyBinaryTree.Node getBinaryTree() {
-        MyBinaryTree<Integer> tree = new MyBinaryTree<>(1);
-        tree.root.left = new MyBinaryTree.Node<>(2);
-        tree.root.right = new MyBinaryTree.Node<>(3);
-        tree.root.left.left = new MyBinaryTree.Node<>(4);
-        tree.root.right.left = new MyBinaryTree.Node<>(5);
+    public static Node getBinaryTree() {
+        Node root = new Node<>(1);
+        root.left = new Node<>(2);
+        root.right = new Node<>(3);
+        root.left.left = new Node<>(4);
+        root.right.left = new Node<>(5);
 
-        return tree.root;
+        return root;
+    }
+
+    public static Node getBinaryTree2() {
+        Node root = new Node<>(1);
+        root.left = new Node<>(2);
+        root.right = new Node<>(3);
+        root.left.left = new Node<>(4);
+        root.left.right= new Node<>(5);
+        root.right.left = new Node<>(6);
+        root.right.right = new Node<>(7);
+
+        return root;
     }
 
     /**
      * Time Complexity : O(N) : because you are iterating over elements exactly once
      * Space complexity: O(N) : Usage of Queue
      */
-    public static void levelOrderTraversal(MyBinaryTree.Node root) {
-        MyQueue<MyBinaryTree.Node> queue = new MyQueue<>(20);
+    public static void levelOrderTraversal(Node root) {
+        MyQueue<Node> queue = new MyQueue<>(20);
 
         if (root == null) {
             System.out.println("There is no node present in tree");
@@ -40,7 +68,7 @@ public class BinaryTreeUtil {
                 if (numberOfNodes <= 0) return;
 
                 while (numberOfNodes != 0) {
-                    MyBinaryTree.Node node = queue.deQueue();
+                    Node node = queue.deQueue();
                     System.out.print(node.key + " ");
                     if (node.left != null)
                         queue.enQueue(node.left);
@@ -53,9 +81,9 @@ public class BinaryTreeUtil {
         }
     }
 
-    public static void iterativePostOrderTraversal(MyBinaryTree.Node root) {
-        MyLinkedStack<MyBinaryTree.Node> stack = new MyLinkedStack<>();
-        MyLinkedStack<MyBinaryTree.Node> stack2 = new MyLinkedStack<>();
+    public static void iterativePostOrderTraversal(Node root) {
+        MyLinkedStack<Node> stack = new MyLinkedStack<>();
+        MyLinkedStack<Node> stack2 = new MyLinkedStack<>();
 
         if (root == null) {
             System.out.println("There is no node present in tree");
@@ -63,7 +91,7 @@ public class BinaryTreeUtil {
             stack.push(root);
             System.out.println("\nIterative PostOrder Traversal");
             while (!stack.isEmpty()) {
-                MyBinaryTree.Node node = stack.pop();
+                Node node = stack.pop();
                 stack2.push(node);
                 if (node.left != null) stack.push(node.left);
                 if (node.right != null) stack.push(node.right);
@@ -74,8 +102,8 @@ public class BinaryTreeUtil {
         }
     }
 
-    public static void iterativePreOrderTraversal(MyBinaryTree.Node root) {
-        MyLinkedStack<MyBinaryTree.Node> stack = new MyLinkedStack<>();
+    public static void iterativePreOrderTraversal(Node root) {
+        MyLinkedStack<Node> stack = new MyLinkedStack<>();
 
         if (root == null) {
             System.out.println("There is no node present in tree");
@@ -83,7 +111,7 @@ public class BinaryTreeUtil {
             stack.push(root);
             System.out.println("\nIterative PreOrder Traversal");
             while (!stack.isEmpty()) {
-                MyBinaryTree.Node node = stack.pop();
+                Node node = stack.pop();
                 System.out.print(node.key + " ");
                 if (node.right != null) stack.push(node.right);
                 if (node.left != null) stack.push(node.left);
@@ -98,13 +126,13 @@ public class BinaryTreeUtil {
      * https://www.youtube.com/watch?v=FfF0FubRtYs&index=4&list=PLqM7alHXFySHCXD7r1J0ky9Zg_GBB1dbk
      */
 
-    public static void reverseLevelOrderTraversal(MyBinaryTree tree) {
-        if (tree != null) {
-            MyQueue<MyBinaryTree.Node> queue = new MyQueue<>(5);
-            MyLinkedStack<MyBinaryTree.Node> stack = new MyLinkedStack<>();
-            queue.enQueue(tree.root);
+    public static void reverseLevelOrderTraversal(Node root) {
+        if (root != null) {
+            MyQueue<Node> queue = new MyQueue<>(5);
+            MyLinkedStack<Node> stack = new MyLinkedStack<>();
+            queue.enQueue(root);
             while (!queue.isEmpty()) {
-                MyBinaryTree.Node node = queue.deQueue();
+                Node node = queue.deQueue();
                 if (node.right != null)
                     queue.enQueue(node.right);
                 if (node.left != null)
@@ -120,7 +148,7 @@ public class BinaryTreeUtil {
     }
 
     /*LNR*/
-    public static void inOrderTraversal(MyBinaryTree.Node node) {
+    public static void inOrderTraversal(Node node) {
         if (node == null)
             return;
         inOrderTraversal(node.left);
@@ -129,7 +157,7 @@ public class BinaryTreeUtil {
     }
 
     /*NLR*/
-    public static void preOrderTraversal(MyBinaryTree.Node node) {
+    public static void preOrderTraversal(Node node) {
         if (node == null)
             return;
         System.out.print(node.key + " ");
@@ -138,7 +166,7 @@ public class BinaryTreeUtil {
     }
 
     /*LRN*/
-    public static void postOrderTraversal(MyBinaryTree.Node node) {
+    public static void postOrderTraversal(Node node) {
         if (node == null)
             return;
         postOrderTraversal(node.left);

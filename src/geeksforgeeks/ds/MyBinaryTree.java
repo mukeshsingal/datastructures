@@ -1,6 +1,8 @@
 package geeksforgeeks.ds;
 
-public class MyBinaryTree<T> {
+import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
+
+public class MyBinaryTree<T> extends BinaryTreeUtil {
     public Node root;
 
     public MyBinaryTree(T key) {
@@ -9,24 +11,6 @@ public class MyBinaryTree<T> {
 
     public MyBinaryTree() {
     }
-
-    public static class Node<T> {
-        public Node left;
-        public Node right;
-        public T key;
-
-        public Node(T key) {
-            this.key = key;
-            left = right = null;
-        }
-
-        @Override
-        public String toString() {
-            return key.toString();
-        }
-    }
-
-
 
     /**
      * Algorithm
