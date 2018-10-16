@@ -1,6 +1,5 @@
 package geeksforgeeks.problems.Tree.NamedProblems;
 
-import geeksforgeeks.ds.MyLinkedStack;
 import geeksforgeeks.ds.MyQueue;
 import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
 
@@ -11,7 +10,7 @@ public class Problem36_Print_nodes_between_two_given_level_numbers_of_a_binary_t
         printLevel(1, 3, node);
     }
 
-    public static void printLevel(int lowLevel, int highLevel, Node root) {
+    private static void printLevel(int lowLevel, int highLevel, Node root) {
 
         int numberOfNodesAtLevel;
         int levelCount = 0;
