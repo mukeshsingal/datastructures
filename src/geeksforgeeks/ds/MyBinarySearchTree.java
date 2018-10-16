@@ -72,6 +72,5 @@ public class MyBinarySearchTree extends MyBinaryTree<Integer> {
                 "       20   40  60   80";
 
         System.out.println(x);
-        tree.levelOrderTraversal(root);
     }
 }
