@@ -1,6 +1,6 @@
 package geeksforgeeks.ds;
 
-import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
+import geeksforgeeks.problems.Tree.BinaryTreeUtil;
 
 public class MyBinaryTree<T> extends BinaryTreeUtil {
     public Node root;

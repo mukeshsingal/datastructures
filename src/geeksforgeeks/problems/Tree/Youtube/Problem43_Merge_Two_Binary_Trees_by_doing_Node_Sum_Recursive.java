@@ -1,6 +1,6 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
+import geeksforgeeks.problems.Tree.BinaryTreeUtil;
 
 /**
  * 2          2         4

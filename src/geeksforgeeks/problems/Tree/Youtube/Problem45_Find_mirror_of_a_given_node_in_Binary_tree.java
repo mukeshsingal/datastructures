@@ -1,6 +1,6 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
+import geeksforgeeks.problems.Tree.BinaryTreeUtil;
 
 public class Problem45_Find_mirror_of_a_given_node_in_Binary_tree extends BinaryTreeUtil {
 

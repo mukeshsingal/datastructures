@@ -1,6 +1,6 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
+import geeksforgeeks.problems.Tree.BinaryTreeUtil;
 
 public class Problem42_Morris_traversal_for_Preorder extends BinaryTreeUtil {
     public static void main(String[] args) {

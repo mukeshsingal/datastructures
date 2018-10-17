@@ -1,6 +1,6 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
+import geeksforgeeks.problems.Tree.BinaryTreeUtil;
 
 public class Problem33_Sum_of_all_the_numbers_formed_from_root_to_leaf_paths extends BinaryTreeUtil {
 

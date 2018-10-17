@@ -1,6 +1,6 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
+import geeksforgeeks.problems.Tree.BinaryTreeUtil;
 
 public class Problem37_Find_Minimum_Depth_of_a_Binary_Tree extends BinaryTreeUtil {
     public static void main(String[] args) {

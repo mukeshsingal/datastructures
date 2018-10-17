@@ -1,4 +1,4 @@
-package geeksforgeeks.problems.Tree.Traversal;
+package geeksforgeeks.problems.Tree;
 
 import geeksforgeeks.ds.MyLinkedStack;
 import geeksforgeeks.ds.MyQueue;

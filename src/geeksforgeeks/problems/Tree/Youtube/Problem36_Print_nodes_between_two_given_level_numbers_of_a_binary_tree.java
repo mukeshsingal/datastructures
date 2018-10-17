@@ -1,7 +1,7 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
 import geeksforgeeks.ds.MyQueue;
-import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
+import geeksforgeeks.problems.Tree.BinaryTreeUtil;
 
 public class Problem36_Print_nodes_between_two_given_level_numbers_of_a_binary_tree extends BinaryTreeUtil {
     public static void main(String[] args) {
