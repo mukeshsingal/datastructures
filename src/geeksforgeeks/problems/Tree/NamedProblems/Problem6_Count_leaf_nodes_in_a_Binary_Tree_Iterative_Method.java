@@ -16,7 +16,7 @@ import geeksforgeeks.ds.MyQueue;
  * Ans: 1 11 9
  * Hence Count is 3
  * */
-public class CountNumberOfLeafsInBinaryTree {
+public class Problem6_Count_leaf_nodes_in_a_Binary_Tree_Iterative_Method {
     public static void count(MyBinaryTree tree) {
         MyQueue<MyBinaryTree.Node> queue = new MyQueue<>(8);
         queue.enQueue(tree.root);
