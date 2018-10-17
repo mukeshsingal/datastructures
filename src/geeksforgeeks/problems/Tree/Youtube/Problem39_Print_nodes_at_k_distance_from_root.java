@@ -1,6 +1,5 @@
-package geeksforgeeks.problems.Tree.NamedProblems;
+package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.ds.MyQueue;
 import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
 
 public class Problem39_Print_nodes_at_k_distance_from_root extends BinaryTreeUtil {

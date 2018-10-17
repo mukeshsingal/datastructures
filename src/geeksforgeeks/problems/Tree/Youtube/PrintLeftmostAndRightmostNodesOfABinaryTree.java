@@ -1,9 +1,7 @@
-package geeksforgeeks.problems.Tree.NamedProblems;
+package geeksforgeeks.problems.Tree.Youtube;
 
 import geeksforgeeks.ds.MyBinaryTree;
 import geeksforgeeks.ds.MyQueue;
-
-import java.util.Queue;
 
 public class PrintLeftmostAndRightmostNodesOfABinaryTree {
     public static void main(String[] args) {

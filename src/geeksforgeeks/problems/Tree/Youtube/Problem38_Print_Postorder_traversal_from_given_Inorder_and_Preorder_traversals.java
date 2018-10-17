@@ -1,4 +1,4 @@
-package geeksforgeeks.problems.Tree.NamedProblems;
+package geeksforgeeks.problems.Tree.Youtube;
 
 public class Problem38_Print_Postorder_traversal_from_given_Inorder_and_Preorder_traversals {
 

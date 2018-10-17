@@ -1,7 +1,6 @@
-package geeksforgeeks.problems.Tree.NamedProblems;
+package geeksforgeeks.problems.Tree.Youtube;
 
 import geeksforgeeks.ds.MyBinaryTree;
-import geeksforgeeks.ds.MyQueue;
 
 public class DeleteAllNodesInBinaryTree {
 

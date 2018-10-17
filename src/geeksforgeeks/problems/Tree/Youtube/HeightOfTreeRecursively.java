@@ -1,9 +1,6 @@
-package geeksforgeeks.problems.Tree.NamedProblems;
+package geeksforgeeks.problems.Tree.Youtube;
 
 import geeksforgeeks.ds.MyBinaryTree;
-import geeksforgeeks.ds.MyQueue;
-
-import java.util.Queue;
 
 /**
  * Thre are two conventions to define height of binary tree.
@@ -17,28 +14,14 @@ import java.util.Queue;
  *      4  5   Ans: 3  : 1-2-4
  *
  * */
-public class HeightOfBinaryTreeIterative {
+public class HeightOfTreeRecursively {
 
-    public static int getHeight(MyBinaryTree tree){
-        MyQueue<MyBinaryTree.Node> queue = new MyQueue<>(20);
-        queue.enQueue(tree.root);
-        int height = 0;
-        while (true) {
-            int nodeCount = queue.size();
-            if(nodeCount <= 0)
-                return height;
-            height ++;
-            while (nodeCount>0) {
-                MyBinaryTree.Node node = queue.deQueue();
-                if (node.left != null) {
-                    queue.enQueue(node.left);
-                }
-                if (node.right != null) {
-                    queue.enQueue(node.right);
-                }
-                nodeCount--;
-            }
-
+    public static int getHeight(MyBinaryTree.Node root){
+        if(root == null) {
+            return 0;
+        }
+        else{
+            return Math.max(getHeight(root.left) + 1, getHeight(root.right)+1);
         }
     }
 
@@ -49,9 +32,10 @@ public class HeightOfBinaryTreeIterative {
         tree.root.left.right = new MyBinaryTree.Node(6);
         tree.root.left.right.left = new MyBinaryTree.Node(1);
         tree.root.left.right.right = new MyBinaryTree.Node(11);
-        tree.root.right.right = new MyBinaryTree.Node(9);
         tree.root.right.right.left = new MyBinaryTree.Node(4);
-        System.out.println("Height of Tree is " + getHeight(tree));
+        tree.root.right.right = new MyBinaryTree.Node(9);
+
+        System.out.println("Height of Tree is " + getHeight(tree.root));
 
         /**
          *                    2

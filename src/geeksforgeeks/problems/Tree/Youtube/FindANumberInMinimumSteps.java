@@ -1,11 +1,6 @@
-package geeksforgeeks.problems.Tree.NamedProblems;
+package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.ds.MyBinaryTree;
-import geeksforgeeks.ds.MyQueue;
-
-import java.util.AbstractQueue;
 import java.util.LinkedList;
-import java.util.PriorityQueue;
 import java.util.Queue;
 
 //https://www.geeksforgeeks.org/find-a-number-in-minimum-steps/

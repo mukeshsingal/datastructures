@@ -1,4 +1,4 @@
-package geeksforgeeks.problems.Tree.NamedProblems;
+package geeksforgeeks.problems.Tree.Youtube;
 
 import geeksforgeeks.problems.Tree.Traversal.BinaryTreeUtil;
 
