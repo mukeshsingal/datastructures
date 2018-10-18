@@ -39,14 +39,13 @@ public class BinaryTreeUtil {
     }
 
     /**
-     *
      * 1       1
-     *      /   \
-     *     2     3
-     *    / \    / \
-     *   4   5  6   7
-     *      / \
-     *      8  9
+     * /   \
+     * 2     3
+     * / \    / \
+     * 4   5  6   7
+     * / \
+     * 8  9
      */
     public static Node getBinaryTree2() {
         Node root = new Node<>(1);
@@ -60,6 +59,25 @@ public class BinaryTreeUtil {
         root.left.right.right = new Node<>(9);
 
 
+        return root;
+    }
+
+    /**
+     * This is full binary tree.
+     * - 1
+     * /   \
+     * 2     2
+     * / \   \ \
+     * 3   4  4  3
+     */
+    public static Node getSymmetricBinaryTree() {
+        Node root = new Node<>(1);
+        root.left = new Node<>(2);
+        root.right = new Node<>(2);
+        root.left.left = new Node<>(3);
+        root.left.right = new Node<>(4);
+        root.right.left = new Node<>(4);
+        root.right.right = new Node<>(3);
         return root;
     }
 
