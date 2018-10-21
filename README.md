@@ -42,3 +42,6 @@
 | Add Two singly linked list| 
 | Check whether a second string can be formed from character of first string| 
 | Number of flips to make a binary string alternate| 
+
+
+thid commit just say i car3 about my dream and goals but didn't get tobdo anything. but i5 doesn'
