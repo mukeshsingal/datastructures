@@ -43,5 +43,6 @@
 | Check whether a second string can be formed from character of first string| 
 | Number of flips to make a binary string alternate| 
 
+This is dummy commit. This is the day i had convocation. 
 
 thid commit just say i car3 about my dream and goals but didn't get tobdo anything. but i5 doesn'
