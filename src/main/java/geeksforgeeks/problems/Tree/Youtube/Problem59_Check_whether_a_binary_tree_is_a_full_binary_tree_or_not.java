@@ -14,6 +14,7 @@ public class Problem59_Check_whether_a_binary_tree_is_a_full_binary_tree_or_not 
             return false;
         }
 
+
         return isBinaryTree(root.left) && isBinaryTree(root.right);
     }
 }
