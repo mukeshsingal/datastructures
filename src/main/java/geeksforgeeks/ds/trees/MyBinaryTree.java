@@ -1,5 +1,6 @@
-package geeksforgeeks.ds;
+package geeksforgeeks.ds.trees;
 
+import geeksforgeeks.ds.Queue.MyQueue;
 import geeksforgeeks.problems.Tree.BinaryTreeUtil;
 
 public class MyBinaryTree<T> extends BinaryTreeUtil {
