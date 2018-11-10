@@ -1,7 +1,5 @@
 package geeksforgeeks.ds.advanced;
 
-import geeksforgeeks.ds.MyBinaryTree;
-
 /**
  * Implemented for Range Minimum Query.
  * We have any array[0..n-1]. We should be able to find minimum value from index qs to qe where 0<= qs <= qe <= n-1.
