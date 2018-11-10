@@ -1,6 +1,6 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.ds.MyQueue;
+import ds.Queue.MyQueue;
 import geeksforgeeks.problems.Tree.BinaryTreeUtil;
 
 public class Problem9_Check_if_two_binary_trees_are_identical_Iterative extends BinaryTreeUtil {

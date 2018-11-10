@@ -1,4 +1,4 @@
-package geeksforgeeks.ds.trees;
+package ds.trees;
 
 /**
  *

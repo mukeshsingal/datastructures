@@ -1,4 +1,4 @@
-package geeksforgeeks.ds;
+package ds;
 
 public class MyLinkedStack<T> {
 

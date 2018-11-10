@@ -1,4 +1,4 @@
-package geeksforgeeks.ds.trees;
+package ds.trees;
 
 import java.util.HashMap;
 import java.util.Map;

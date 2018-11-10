@@ -9,7 +9,42 @@ public class Problem61_Connect_nodes_at_same_level_using_constant_extra_space ex
     }
 
     static void getSameLevelNodeConnected(TreeNode root) {
-        /*do level order traversal and check if */
+        TreeNode temp;
+
+        if (root == null) return;
+
+        root.nextRight = null;
+
+        while (root != null) {
+            TreeNode node = root;
+
+            /* Connect all children of P at same level */
+            while (node != null) {
+                if (node.left != null) {
+                    if (node.right != null) {
+                        node.left.nextRight = node.right;
+                    } else {
+                        node.left.nextRight = getNextRight(node);
+                    }
+                }
+
+                if (node.right != null) {
+                    node.right.nextRight = getNextRight(node);
+                }
+
+                node = node.nextRight;
+            }
+        }
+    }
+
+    private static TreeNode getNextRight(TreeNode node) {
+        TreeNode temp = node.nextRight;
+
+        while (temp != null) {
+            if(temp.left !=null)
+                return temp;
+        }
+        return null;
     }
 
     static TreeNode getModifiedTree() {

@@ -1,6 +1,6 @@
 package leetcode;
 
-import geeksforgeeks.ds.MyLinkedList;
+import ds.MyLinkedList;
 
 /**
  * URL : https://leetcode.com/problems/add-two-numbers/description/

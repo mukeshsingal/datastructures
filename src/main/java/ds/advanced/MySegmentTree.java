@@ -1,4 +1,4 @@
-package geeksforgeeks.ds.advanced;
+package ds.advanced;
 
 /**
  * Implemented for Range Minimum Query.

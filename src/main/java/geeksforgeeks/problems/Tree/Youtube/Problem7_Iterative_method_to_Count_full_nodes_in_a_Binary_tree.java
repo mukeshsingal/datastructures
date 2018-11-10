@@ -1,6 +1,6 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.ds.MyQueue;
+import ds.Queue.MyQueue;
 import geeksforgeeks.problems.Tree.BinaryTreeUtil;
 
 

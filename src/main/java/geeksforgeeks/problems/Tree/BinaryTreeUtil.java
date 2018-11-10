@@ -1,7 +1,7 @@
 package geeksforgeeks.problems.Tree;
 
-import geeksforgeeks.ds.MyLinkedStack;
-import geeksforgeeks.ds.MyQueue;
+import ds.MyLinkedStack;
+import ds.Queue.MyQueue;
 
 public class BinaryTreeUtil {
 

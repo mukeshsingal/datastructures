@@ -1,7 +1,7 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.ds.MyBinaryTree;
-import geeksforgeeks.ds.MyQueue;
+import ds.trees.MyBinaryTree;
+import ds.Queue.MyQueue;
 
 /**
  *  Half Nodes are the nodes which has only one child

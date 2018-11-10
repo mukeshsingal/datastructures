@@ -1,7 +1,7 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.ds.MyBinaryTree;
-import geeksforgeeks.ds.MyQueue;
+import ds.trees.MyBinaryTree;
+import ds.Queue.MyQueue;
 
 /**
  * Thre are two conventions to define height of binary tree.

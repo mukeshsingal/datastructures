@@ -1,7 +1,7 @@
 package geeksforgeeks.problems.Tree.Youtube;
 
-import geeksforgeeks.ds.MyBinaryTree;
-import geeksforgeeks.ds.MyQueue;
+import ds.trees.MyBinaryTree;
+import ds.Queue.MyQueue;
 
 public class SizeOfBinaryTree {
 

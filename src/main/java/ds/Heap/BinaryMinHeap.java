@@ -1,4 +1,4 @@
-package geeksforgeeks.ds.Heap;
+package ds.Heap;
 
 import java.util.ArrayList;
 import java.util.HashMap;
