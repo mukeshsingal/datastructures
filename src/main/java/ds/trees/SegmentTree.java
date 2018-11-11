@@ -35,11 +35,11 @@ public class SegmentTree {
     }
 
 
-    private int getSum(int lengthOfArray, int startIndex, int endIndex) {
-        if (startIndex < 0 || endIndex > lengthOfArray || startIndex > endIndex) {
+    private int getSum(int lengthOfArray, int queryStartIndex, int queryEndIndex) {
+        if (queryStartIndex < 0 || queryEndIndex > lengthOfArray || queryStartIndex > queryEndIndex) {
             System.out.println("Invalid Query Parameters");
         }
-        return getSumUtil(0, lengthOfArray - 1, startIndex, endIndex, 0);
+        return getSumUtil(0, lengthOfArray - 1, queryStartIndex, queryEndIndex, 0);
     }
 
     private int getSumUtil(int start, int end, int queryStartIndex, int queryEndIndex, int currentIndex) {
@@ -56,15 +56,6 @@ public class SegmentTree {
                 getSumUtil(mid + 1, end, queryStartIndex, queryEndIndex, currentIndex * 2 + 2);
     }
 
-    public static void main(String[] args) {
-
-        int input[] = {1, -1, 0, 1, 1};
-
-        SegmentTree segmentTree = new SegmentTree(input);
-        System.out.println("Sum of values in given range = " + segmentTree.getSum(input.length, 0, 4));
-
-        segmentTree.updateValue(input, input.length, 1, 10);
-    }
 
     private void updateValue(int[] input, int length, int index, int newValue) {
         if (index < 0 || index > input.length) {
@@ -90,6 +81,17 @@ public class SegmentTree {
             updateValueUtil(start, mid, index, diff, currentIndex * 2 + 1);
             updateValueUtil(mid, end, index, diff, currentIndex * 2 + 2);
         }
+    }
+
+    public static void main(String[] args) {
+
+        int input[] = {1, -1, 0, 1, 1};
+
+        SegmentTree segmentTree = new SegmentTree(input);
+        System.out.println("Sum of values in given range = " +
+                segmentTree.getSum(input.length, 0, 4));
+
+        segmentTree.updateValue(input, input.length, 1, 10);
     }
 
 }
