@@ -68,6 +68,17 @@ public class SinglelyLinkedList {
         }
     }
 
+    public int length() {
+        return length(root);
+    }
+
+    private int length(Node root) {
+        if(root == null)
+            return 0;
+
+        return length(root.next) + 1;
+    }
+
     public static void main(String[] args) {
         SinglelyLinkedList linkedList = new SinglelyLinkedList();
         linkedList.insert(12);
@@ -80,5 +91,7 @@ public class SinglelyLinkedList {
         linkedList.removeFromEnd();
         linkedList.removeFromStart();
         linkedList.print();
+
+        System.out.println("Length : " + linkedList.length());
     }
 }
