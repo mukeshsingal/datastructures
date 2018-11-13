@@ -74,6 +74,7 @@ public class UnionFindAlgorithm {
          */
 
         int V = 3, E = 3;
+
         UnionFindAlgorithm graph = new UnionFindAlgorithm(V, E);
 
         graph.edge[0].src = 0;
