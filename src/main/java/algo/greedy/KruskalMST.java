@@ -3,6 +3,26 @@ package algo.greedy;
 import javax.xml.bind.SchemaOutputResolver;
 import java.util.Arrays;
 
+/**
+ * Kruskal’s Minimum Spanning Tree Algorithm
+ *
+ * A minimum spanning tree (MST) or minimum weight spanning tree for a weighted,
+ * connected and undirected graph is a spanning tree with weight less than or
+ * equal to the weight of every other spanning tree.
+ *
+ * A minimum spanning tree has (V – 1) edges where V is the number of vertices in
+ * the given graph.
+ *
+ * Algorithm:
+ * 1. create a List of Edges
+ * 2. Sort the List based on weight in increasing order
+ * 3. Continue below steps for n-1 edges
+ * 4. Pick and the first edge and add to MST
+ * 5. Use Disjoint set Union Find Algorithm to detect cycle in graph
+ *      1. If cycle exist then remove edge from MST
+ *      2. If doesn't exist continue
+ *
+ */
 public class KruskalMST {
     int numberOfVertices;
     int numberOfEdges;
@@ -25,6 +45,7 @@ public class KruskalMST {
             this.dest = dest;
             this.weight = weight;
         }
+
         public Edge() {
 
         }
@@ -52,28 +73,29 @@ public class KruskalMST {
     }
 
     public void union(Subset[] subsets, int edgeSrc, int edgeDest) {
-        int xRoot = find(subsets, edgeSrc);
-        int yRoot = find(subsets, edgeDest);
+        int x = find(subsets, edgeSrc);
+        int y = find(subsets, edgeDest);
 
         //Attach Smaller rank tree under root of high rank tree
         //Union by rank
-        if (subsets[xRoot].rank < subsets[yRoot].rank) {
-            subsets[xRoot].parent = yRoot;
-        } else if (subsets[xRoot].rank > subsets[yRoot].rank) {
-            subsets[yRoot].parent = xRoot;
+        if (subsets[x].rank < subsets[y].rank) {
+            subsets[x].parent = y;
+        } else if (subsets[x].rank > subsets[y].rank) {
+            subsets[y].parent = x;
         } else {
-            subsets[yRoot].parent = xRoot;
-            subsets[xRoot].rank++;
+            subsets[y].parent = x;
+            subsets[x].rank++;
         }
     }
 
     public void kruskal() {
-        Edge result[] = new Edge[numberOfVertices-1];
-        for (int i = 0; i < numberOfVertices-1; i++) {
+        Edge result[] = new Edge[numberOfVertices - 1];
+        for (int i = 0; i < numberOfVertices - 1; i++) {
             result[i] = new Edge();
         }
 
         Arrays.sort(edges);
+
 
         Subset subsets[] = new Subset[numberOfVertices];
         for (int v = 0; v < subsets.length; ++v) {
