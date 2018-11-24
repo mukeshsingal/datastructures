@@ -24,6 +24,15 @@ package algo.greedy;
  * A person can perform at most four activities. The maximum set of
  * activities that can be executed is {0, 1, 3, 4}
  * [ These are indexes in start[] and finish[]]
+ *
+ *
+ * Algorithm:
+ *
+ * Sort start[] and finish[] by Finish time of activity array
+ * 1. Select first Activity
+ * 2. For rest of activities,
+ *      1. Select those activities
+ *          where prev end time < next start time
  */
 public class ActivitySelectionProblem {
     public static void printMaxActivities(int start[], int finish[]) {
