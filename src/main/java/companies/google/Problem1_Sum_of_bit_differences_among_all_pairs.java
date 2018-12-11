@@ -1,9 +1,12 @@
 package companies.google;
 
-
+/**
+ * Time Complexity O(N)
+ * Space Complexity O(1)
+ */
 public class Problem1_Sum_of_bit_differences_among_all_pairs {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         int[] arr = {1, 2, 3};
         System.out.println("Sum of bit differences in all pairs : " + calculateBitDifference(arr));
     }
