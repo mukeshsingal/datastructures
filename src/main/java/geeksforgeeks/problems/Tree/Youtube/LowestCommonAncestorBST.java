@@ -40,11 +40,7 @@ public class LowestCommonAncestorBST {
                 root = root.left;
                 continue;
             }
-
-            if (node1 > root.data) {
-                root = root.right;
-                continue;
-            }
+            root = root.right;
         }
         return null;
     }
