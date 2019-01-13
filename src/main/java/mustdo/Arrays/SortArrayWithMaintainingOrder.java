@@ -35,7 +35,7 @@ public class SortArrayWithMaintainingOrder {
         }
         for (Map.Entry<Integer, Integer> e : map.entrySet()) {
             int times = e.getValue();
-            while (times != 0 && e.getValue() != 0) {
+            while (times != 0) {
                 arr[count++] = e.getKey();
                 times--;
             }
