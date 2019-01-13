@@ -1,4 +1,4 @@
-package algo.greedy;
+package mustdo.Greedy;
 
 /**
  * You are given n activities with their start and finish times.
