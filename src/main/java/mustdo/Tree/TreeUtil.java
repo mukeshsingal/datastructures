@@ -44,8 +44,8 @@ public class TreeUtil {
      * 4   5
      */
     public static Node getBinaryTree() {
-        Node root = new Node(1);
-        root.left = new Node(2);
+        Node root = new Node(2);
+        root.left = new Node(-2);
         root.left.left = new Node(4);
         root.left.right = new Node(5);
 
