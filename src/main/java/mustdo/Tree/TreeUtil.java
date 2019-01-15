@@ -19,6 +19,25 @@ public class TreeUtil {
      * / \
      * 4   5
      */
+    public static Node getBST() {
+        Node root = new Node(5);
+        root.left = new Node(3);
+        root.left.left = new Node(2);
+        root.left.right = new Node(4);
+
+        root.right = new Node(7);
+        root.right.left = new Node(6);
+        return root;
+    }
+
+    /**
+     * This is full binary tree.
+     * 1
+     * / \
+     * 2   3
+     * / \
+     * 4   5
+     */
     public static Node getBinaryTree() {
         Node root = new Node(1);
         root.left = new Node(2);
