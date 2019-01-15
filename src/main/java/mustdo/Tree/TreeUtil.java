@@ -18,11 +18,11 @@ public class TreeUtil {
 
     /**
      * This is full binary tree.
-     * 1
-     * / \
-     * 2   3
-     * / \
-     * 4   5
+     *    5
+     *  /   \
+     * 3     7
+     * / \   /
+     *2   4 6
      */
     public static Node getBST() {
         Node root = new Node(5);
