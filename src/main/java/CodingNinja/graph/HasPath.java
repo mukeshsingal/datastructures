@@ -29,13 +29,13 @@ public class HasPath {
     }
 
     public static void hasPath(int[][] graph, int V, int s, boolean[] visited) {
-        if(visited[s]) {
+        if (visited[s]) {
             return;
         }
 
         visited[s] = true;
-        for(int i = 0; i < V; i++) {
-            if(graph[s][i] == 1 && !visited[i]) {
+        for (int i = 0; i < V; i++) {
+            if (graph[s][i] == 1 && !visited[i]) {
                 hasPath(graph, V, i, visited);
             }
         }
