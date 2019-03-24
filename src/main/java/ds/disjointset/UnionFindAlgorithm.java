@@ -14,7 +14,7 @@ package ds.disjointset;
 
 public class UnionFindAlgorithm {
 
-    Edge edge[];
+    static Edge edge[];
 
     class Edge {
         int src, dest;
