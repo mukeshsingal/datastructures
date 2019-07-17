@@ -14,6 +14,6 @@ public class Problem_461_Hamming_Distance {
             x=x>>1;
             y=y>>1;
         }
-        return hDistance
+        return hDistance;
     }
 }
