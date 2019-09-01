@@ -35,15 +35,15 @@ public class LongestIncreasingSubsequnce {
             return 1 + lis2(arr, n+1);
         }
         else {
-            return  lis2(arr, n+1);
+            return lis2(arr, n+1);
         }
     }
 
 
 
     public static void main(String args[]) {
-        int arr[] =   {50, 3, 10, 7, 40, 80};
+        int arr[] =   {89, 50, 3, 10, 2, 11, 80};
         int n = arr.length;
-        System.out.println("Length of lis is " + (lis2(arr, 0) + 1));
+        System.out.println("Length of lis is " + (lis(arr, arr.length)));
     }
 }
