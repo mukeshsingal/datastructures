@@ -44,5 +44,4 @@
 | Check whether a second string can be formed from character of first string| 
 | Number of flips to make a binary string alternate| 
 
-This is dummy commit. This is the day i had convocation. 
 
