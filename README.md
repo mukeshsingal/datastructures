@@ -42,6 +42,6 @@
 | Reverse a string by words MY Name is Khan then ans will be Khan is name my| 
 | Add Two singly linked list| 
 | Check whether a second string can be formed from character of first string| 
-| Number of flips to make a binary string alternate| 
+| Number of flips to make a binary string alternat
 
 
