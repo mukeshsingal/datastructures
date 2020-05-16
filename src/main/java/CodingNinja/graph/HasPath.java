@@ -26,6 +26,7 @@ public class HasPath {
         boolean result = visited[destVertex];
 
         System.out.println(result);
+        s.close();
     }
 
     public static void hasPath(int[][] graph, int V, int s, boolean[] visited) {

@@ -29,6 +29,7 @@ public class GetPath {
                 System.out.print(i + " ");
             }
         }
+        s.close();
     }
 
     public static ArrayList<Integer> getPath(int[][] graph, int V, int s, int d, boolean[] visited, ArrayList<Integer> result) {

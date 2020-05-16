@@ -19,6 +19,7 @@ public class BFS {
         }
 
         doBFS(graph, V, 0);
+        s.close();
     }
 
     public static void doBFS(int[][] graph, int V, int startVertex) {

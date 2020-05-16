@@ -33,6 +33,7 @@ public class ConnectedComponents {
                 }
             }
         }
+        s.close();
     }
 
     public static ArrayList<Integer> doDFS(int[][] graph, int V, int s, boolean[] visited, ArrayList<Integer> result) {

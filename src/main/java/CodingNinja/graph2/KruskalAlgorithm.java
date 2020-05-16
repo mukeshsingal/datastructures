@@ -76,6 +76,7 @@ public class KruskalAlgorithm {
             int weight = s.nextInt();
             edges.add(new Edge(src, dest, weight));
         }
+        s.close();
         return edges;
     }
 

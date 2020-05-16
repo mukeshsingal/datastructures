@@ -26,13 +26,14 @@ public class GetPathBFS {
         int sourceVertex = s.nextInt();
         int destVertex = s.nextInt();
 
-        boolean[] visited = new boolean[V];
+        // boolean[] visited = new boolean[V];
         ArrayList<Integer> result = getPath(graph, V, sourceVertex, destVertex);
         if (result != null) {
             for (int i : result) {
                 System.out.print(i + " ");
             }
         }
+        s.close();
     }
 
     public static ArrayList<Integer> getPath(int[][] graph, int V, int sourceVertex, int destVertex) {

@@ -19,6 +19,7 @@ public class BFS_Disconnected {
         }
 
         BFSUtil(graph, V);
+        s.close();
     }
 
     public static void BFSUtil(int[][] graph, int V) {

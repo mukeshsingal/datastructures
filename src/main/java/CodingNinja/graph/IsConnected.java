@@ -19,6 +19,7 @@ public class IsConnected {
         }
 
         BFSUtil(graph, V);
+        s.close();
     }
 
     public static void BFSUtil(int[][] graph, int V) {
