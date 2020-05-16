@@ -1,4 +1,4 @@
-package CodingNinja.dynamicProgramming1;
+package CodingNinja.DynamicProgramming1;
 
 public class LIS {
     public static void main(String[] args) {

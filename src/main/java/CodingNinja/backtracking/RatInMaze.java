@@ -1,4 +1,4 @@
-package CodingNinja.backtracking;
+package CodingNinja.Backtracking;
 
 import java.util.Arrays;
 

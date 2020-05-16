@@ -1,17 +1,16 @@
-package CodingNinja.trie;
+package CodingNinja.Trie;
 
 public class SearchEngine {
     public static void main(String[] args) {
         Trie2 trie = new Trie2();
         trie.head = new TrieNode2(0);
 
-        String[] strings = {"abc", "abe", "abd"};
-        int[] weights = {2, 3, 4};
+        String[] strings = { "abc", "abe", "abd" };
+        int[] weights = { 2, 3, 4 };
 
         for (int i = 0; i < weights.length; i++) {
             trie.insert(strings[i], weights[i]);
         }
-
 
         System.out.println("AB " + trie.query("ab"));
         System.out.println("abc " + trie.query("abc"));
@@ -22,11 +21,11 @@ public class SearchEngine {
 }
 
 class TrieNode2 {
-    
+
     TrieNode2[] nodes;
     int weight;
 
-    TrieNode2 (int weight) {
+    TrieNode2(int weight) {
         this.nodes = new TrieNode2[26];
         this.weight = weight;
     }
@@ -39,13 +38,13 @@ class Trie2 {
         TrieNode2 current = head;
 
         char[] chars = s.toCharArray();
-        
-        for(char c : chars) {
+
+        for (char c : chars) {
             int index = c - 'a';
-            if(current.nodes[index] == null) {
+            if (current.nodes[index] == null) {
                 current.nodes[index] = new TrieNode2(weight);
             }
-            if(current.weight < weight) {
+            if (current.weight < weight) {
                 current.weight = weight;
             }
             current = current.nodes[index];
@@ -56,8 +55,8 @@ class Trie2 {
         TrieNode2 current = head;
 
         char[] chars = s.toCharArray();
-        
-        for(char c : chars) {
+
+        for (char c : chars) {
             int index = c - 'a';
             current = current.nodes[index];
         }

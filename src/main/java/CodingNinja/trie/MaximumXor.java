@@ -1,11 +1,11 @@
-package CodingNinja.trie;
+package CodingNinja.Trie;
 
 public class MaximumXor {
     public static void main(String[] args) {
         int arr[] = { 8, 1, 2, 15, 10, 5 };
  
-        Trie trie = new Trie();
-        trie.head = new TrieNode();
+        Trie2 trie = new Trie2();
+        trie.head = new TrieNode2();
 
         for (int i : arr) {
             trie.insert(i);
@@ -16,12 +16,12 @@ public class MaximumXor {
 }
 
 class TrieNode {
-    TrieNode left;
-    TrieNode right;
+    TrieNode2 left;
+    TrieNode2 right;
 }
 
 class Trie {
-    TrieNode head;
+    TrieNode2 head;
 
     /**
      * Here eg. Number is 2 so its binary representation will be
@@ -33,7 +33,7 @@ class Trie {
      * @param number to be inserted in trie
      */
     public void insert(int number) {
-        TrieNode current = head;
+        TrieNode2 current = head;
 
         for (int i = 0; i <= 31; i++) {
 
@@ -42,12 +42,12 @@ class Trie {
 
             if (bitValue == 1) {
                 if (current.left == null) {
-                    current.left = new TrieNode();
+                    current.left = new TrieNode2();
                 }
                 current = current.left;
             } else {
                 if (current.right == null) {
-                    current.right = new TrieNode();
+                    current.right = new TrieNode2();
                 }
                 current = current.right;
             }
@@ -60,11 +60,12 @@ class Trie {
         for (int value : arr) {
 
             int currentMax = 0;
-            TrieNode current = head;
+            TrieNode2 current = head;
 
             for (int i = 0; i <= 31; i++) {
                 
                 int bitValue = (value >> i) & 1;
+
                 if (bitValue == 1) {
                     if (current.left != null) {
                         currentMax += Math.pow(2, i);
@@ -72,7 +73,6 @@ class Trie {
                     } else {
                         current = current.right;
                     }
-                    
                 } else {
                     if (current.right != null) {
                         current = current.right;

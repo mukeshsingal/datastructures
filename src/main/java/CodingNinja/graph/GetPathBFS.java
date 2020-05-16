@@ -1,4 +1,4 @@
-package CodingNinja.graph;
+package CodingNinja.Graph;
 
 
 import java.util.Scanner;
