@@ -17,7 +17,7 @@ package CodingNinja.BitMasking;
  * |	Bitwise OR
  * &	Bitwise AND
  * ~	Bitwise Complement
- * ^	Bitwise XOR
+ * ^	Bitwise XOR | flip with bit if you xor with 1
  * <<	Left Shift | multiply with 2 | n << i -> multiply n with 2 i times
  * >>	Right Shift | divide by 2 | n >> i -> divide n with 2 i times
  * >>>	Unsigned Right Shift
@@ -50,5 +50,15 @@ public class Introduction {
         System.out.println("" + 12 + " << " +  " = " + signedLeftShift);
         System.out.println("" + 12 + " >> " +  " = " + signedRightShift);
         System.out.println("" + 12 + " >>> " +  " = " + unsignedRightShift);
-    }   
+    } 
+
+    boolean checkIthBit(int n, int index) {
+        return (n & (1 << index)) == 0;
+    } 
+    int flipIthBit(int n, int index) {
+        return (n ^ (1 << index));
+    } 
+    boolean isEven(int n) {
+        return (n & 1) == 0;
+    }
 }
