@@ -61,4 +61,7 @@ public class Introduction {
     boolean isEven(int n) {
         return (n & 1) == 0;
     }
+    boolean isPowerOf2(int n) {
+        return (n & n-1) == 0;
+    }
 }
