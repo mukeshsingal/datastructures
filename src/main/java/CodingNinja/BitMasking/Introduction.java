@@ -50,18 +50,28 @@ public class Introduction {
         System.out.println("" + 12 + " << " +  " = " + signedLeftShift);
         System.out.println("" + 12 + " >> " +  " = " + signedRightShift);
         System.out.println("" + 12 + " >>> " +  " = " + unsignedRightShift);
+
+        System.out.println("Is Power of 2 - 2"+ isPowerOf2(2));
+        System.out.println("Is Power of 2 - 3 " + isPowerOf2(6));
+        System.out.println("Is Power of 2 - 7" + isPowerOf2(7));
     } 
 
-    boolean checkIthBit(int n, int index) {
+
+    static boolean checkIthBit(int n, int index) {
         return (n & (1 << index)) == 0;
     } 
-    int flipIthBit(int n, int index) {
+    static int flipIthBit(int n, int index) {
         return (n ^ (1 << index));
     } 
-    boolean isEven(int n) {
+    static boolean isEven(int n) {
         return (n & 1) == 0;
     }
-    boolean isPowerOf2(int n) {
+    static boolean isPowerOf2(int n) {
         return (n & n-1) == 0;
+    }
+
+    static int removeSetBitsBeforeIthIndex(int n, int index) {
+        
+        return (~((1 << (index+1)) -1)) & n;
     }
 }
