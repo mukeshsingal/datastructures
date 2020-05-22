@@ -1,11 +1,9 @@
-package CodingNinja.dynamicProgramming1;
-
+package CodingNinja.DynamicProgramming1;
 
 import java.util.Scanner;
 import java.util.Arrays;
 
 public class MagicGrid {
-
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -22,10 +20,9 @@ public class MagicGrid {
             } else {
                 int[][] dp = new int[r][c];
 
-
                 dp[r - 1][c - 1] = matrix[r - 1][c - 1] + 1;
 
-                //fill the last row
+                // fill the last row
                 for (int j = c - 2; j >= 0; j--) {
                     if (dp[r - 1][j + 1] - matrix[r - 1][j] <= 0) {
                         dp[r - 1][j] = 1;
@@ -34,7 +31,7 @@ public class MagicGrid {
                     }
                 }
 
-                //fill the last col
+                // fill the last col
                 for (int j = r - 2; j >= 0; j--) {
                     if (dp[j + 1][c - 1] - matrix[j][c - 1] <= 0) {
                         dp[j][c - 1] = 1;
