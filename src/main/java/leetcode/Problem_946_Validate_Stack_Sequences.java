@@ -4,9 +4,6 @@ import java.util.Stack;
 
 public class Problem_946_Validate_Stack_Sequences {
 
-}
-
-class Solution {
     public boolean validateStackSequences(int[] pushed, int[] popped) {
         int i = 0;
         int j = 0;

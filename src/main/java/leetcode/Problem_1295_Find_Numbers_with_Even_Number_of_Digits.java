@@ -1,10 +1,7 @@
 package leetcode;
 
 public class Problem_1295_Find_Numbers_with_Even_Number_of_Digits {
-    
-}
 
-class Solution {
     public int findNumbers(int[] nums) {
         int result = 0;
         

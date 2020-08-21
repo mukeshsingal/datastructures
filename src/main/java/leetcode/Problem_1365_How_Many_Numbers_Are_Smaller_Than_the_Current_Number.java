@@ -2,9 +2,6 @@ package leetcode;
 
 public class Problem_1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number {
 
-}
-
-class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] map = new int[101];
         

@@ -1,9 +1,7 @@
 package leetcode;
 
 public class Problem_944_Delete_Columns_to_Make_Sorted {
-}
 
-class Solution {
     private boolean check(String[] A , int col) {
         char prev = ' ';
         for (String string : A) {

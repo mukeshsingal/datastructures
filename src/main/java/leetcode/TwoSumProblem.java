@@ -6,13 +6,11 @@ public class TwoSumProblem {
     public static void main(String[] args) {
 
         Solution s = new Solution();
-        int[] array = s.twoSum(new int[]{2, 7, 10, 11}, 9);
+        int[] array = twoSum(new int[]{2, 7, 10, 11}, 9);
         System.out.println("Expected [0, 1]");
         System.out.println("Answer [" + array[0] + "," + array[1] + "]");
     }
-}
 
-class Solution {
 
     /*
      * Brute force Solution:
@@ -63,7 +61,7 @@ class Solution {
      * Space complexity = O(N)
         */
 
-    public int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];

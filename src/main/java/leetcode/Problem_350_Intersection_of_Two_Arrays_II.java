@@ -1,10 +1,10 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class Problem_350_Intersection_of_Two_Arrays_II {
 
-}
-
-class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         ArrayList<Integer> list = new ArrayList();
         HashMap<Integer, Integer> map = new HashMap<>();

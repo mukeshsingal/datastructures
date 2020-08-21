@@ -1,6 +1,6 @@
 package leetcode;
 
-public class LinkedList {
+public class LinkedList<T> {
 
 }
 

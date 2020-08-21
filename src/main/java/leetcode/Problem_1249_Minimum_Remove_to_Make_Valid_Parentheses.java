@@ -1,10 +1,9 @@
 package leetcode;
 
+import java.util.Stack;
+
 public class Problem_1249_Minimum_Remove_to_Make_Valid_Parentheses {
 
-}
-
-class Solution {
     
     /* 1249. Minimum Remove to Make Valid Parentheses */
     /*

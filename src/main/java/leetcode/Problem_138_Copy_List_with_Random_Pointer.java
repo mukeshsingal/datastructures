@@ -1,25 +1,24 @@
 package leetcode;
 
+import java.util.HashMap;
+
+
+
 public class Problem_138_Copy_List_with_Random_Pointer {
+    // Definition for a Node.
+    class Node {
+        int val;
+        Node next;
+        Node random;
 
-}
-
-/*
-// Definition for a Node.
-class Node {
-    int val;
-    Node next;
-    Node random;
-
-    public Node(int val) {
-        this.val = val;
-        this.next = null;
-        this.random = null;
+        public Node(int val) {
+            this.val = val;
+            this.next = null;
+            this.random = null;
+        }
     }
-}
-*/
 
-class Solution {
+
     public Node copyRandomList(Node head) {
         Node copyHead = null;
         Node referenceHead = null;

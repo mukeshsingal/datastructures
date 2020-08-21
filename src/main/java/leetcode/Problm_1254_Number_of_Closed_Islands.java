@@ -2,9 +2,6 @@ package leetcode;
 
 public class Problm_1254_Number_of_Closed_Islands {
 
-}
-
-class Solution {
     int r = 0;
     int c = 0;
     

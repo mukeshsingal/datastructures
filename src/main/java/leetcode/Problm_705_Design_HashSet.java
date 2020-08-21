@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Arrays;
+
 public class Problm_705_Design_HashSet {
     
 }
@@ -29,7 +31,7 @@ class MyHashSet {
         else return set[key];
     }
     public void extend(int key) {
-        set=Arrays.copyOf(set,key+1);
+        set= Arrays.copyOf(set,key+1);
     }
 }
 

@@ -1,6 +1,5 @@
 package leetcode;
 
-
 import java.util.*;
 
 public class Problem_107_Binary_Tree_Level_Order_Traversal_II{
@@ -13,7 +12,7 @@ public class Problem_107_Binary_Tree_Level_Order_Traversal_II{
         if(root == null) {
             return gList;
         }
-        Queue<TreeNode> queue = new LinkedList<>();
+        Queue<TreeNode> queue = (Queue<TreeNode>) new LinkedList<TreeNode>();
         queue.add(root);
 
         int size = queue.size();

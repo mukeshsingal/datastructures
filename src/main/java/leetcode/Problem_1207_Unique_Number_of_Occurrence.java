@@ -2,9 +2,6 @@ package leetcode;
 
 public class Problem_1207_Unique_Number_of_Occurrence {
 
-}
-
-class Solution {
     public boolean uniqueOccurrences(int[] arr) {
         int[] hashmap1 = new int[2001];
         int[] hashmap2 = new int[1001];

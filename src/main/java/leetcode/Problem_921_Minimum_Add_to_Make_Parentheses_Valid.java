@@ -2,8 +2,6 @@ package leetcode;
 
 public class Problem_921_Minimum_Add_to_Make_Parentheses_Valid {
 
-}
-class Solution {
     public int minAddToMakeValid(String S) {
         char[] arr = S.toCharArray();
         

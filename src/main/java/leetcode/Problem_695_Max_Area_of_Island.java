@@ -2,9 +2,7 @@ package leetcode;
 
 public class Problem_695_Max_Area_of_Island {
 
-}
 
-class Solution {
     public int maxAreaOfIsland(int[][] grid) {
         int r = grid.length;
         int c = grid[0].length;

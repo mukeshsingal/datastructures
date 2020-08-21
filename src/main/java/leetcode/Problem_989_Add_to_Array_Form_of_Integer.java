@@ -1,10 +1,11 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Problem_989_Add_to_Array_Form_of_Integer {
 
-}
-
-class Solution {
     public List<Integer> addToArrayForm(int[] A, int K) {
         int N = A.length;
         int cur = K;

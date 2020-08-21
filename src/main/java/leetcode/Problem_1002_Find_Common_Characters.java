@@ -1,10 +1,10 @@
 package leetcode;
 
-public class Problem_1002_Find_Common_Characters {
-    
-}
+import java.util.ArrayList;
+import java.util.List;
 
-class Solution {
+public class Problem_1002_Find_Common_Characters {
+
     public List<String> commonChars(String[] A) {
         int minCache[] = getCache(A[0]);
         for(int i=1;i<A.length;i++) {

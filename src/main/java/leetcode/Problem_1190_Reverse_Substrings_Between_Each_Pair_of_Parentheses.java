@@ -4,9 +4,6 @@ import java.util.Stack;
 
 public class Problem_1190_Reverse_Substrings_Between_Each_Pair_of_Parentheses {
 
-}
-
-class Solution {
     public String reverseParentheses(String s) {
         
         StringBuilder sb = new StringBuilder(s);

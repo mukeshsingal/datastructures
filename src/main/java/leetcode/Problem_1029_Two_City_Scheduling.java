@@ -1,9 +1,10 @@
 package leetcode;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Problem_1029_Two_City_Scheduling {
 
-}
-class Solution {
     public int twoCitySchedCost(int[][] costs) {
         Arrays.sort(costs, new Comparator<int[]>() {
             @Override

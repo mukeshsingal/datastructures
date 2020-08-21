@@ -1,12 +1,12 @@
 package leetcode;
 
-public class Problem_1441_Build_an_Array_With_Stack_Operations {
-    
-}
+import java.util.List;
+import java.util.LinkedList;
 
-class Solution {
+public class Problem_1441_Build_an_Array_With_Stack_Operations {
+
     public List<String> buildArray(int[] target, int n) {
-        List<String> list = new LinkedList<>();
+        List<String> list = new LinkedList<String>();
         
         String push = "Push";
         String pop = "Pop";

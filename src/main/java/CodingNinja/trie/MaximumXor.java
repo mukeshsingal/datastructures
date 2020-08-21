@@ -4,8 +4,8 @@ public class MaximumXor {
     public static void main(String[] args) {
         int arr[] = { 8, 1, 2, 15, 10, 5 };
  
-        Trie2 trie = new Trie2();
-        trie.head = new TrieNode2();
+        Trie trie = new Trie();
+        trie.head = new TrieNode();
 
         for (int i : arr) {
             trie.insert(i);
@@ -16,12 +16,12 @@ public class MaximumXor {
 }
 
 class TrieNode {
-    TrieNode2 left;
-    TrieNode2 right;
+    TrieNode left;
+    TrieNode right;
 }
 
 class Trie {
-    TrieNode2 head;
+    TrieNode head;
 
     /**
      * Here eg. Number is 2 so its binary representation will be
@@ -33,7 +33,7 @@ class Trie {
      * @param number to be inserted in trie
      */
     public void insert(int number) {
-        TrieNode2 current = head;
+        TrieNode current = head;
 
         for (int i = 0; i <= 31; i++) {
 
@@ -42,12 +42,12 @@ class Trie {
 
             if (bitValue == 1) {
                 if (current.left == null) {
-                    current.left = new TrieNode2();
+                    current.left = new TrieNode();
                 }
                 current = current.left;
             } else {
                 if (current.right == null) {
-                    current.right = new TrieNode2();
+                    current.right = new TrieNode();
                 }
                 current = current.right;
             }
@@ -60,7 +60,7 @@ class Trie {
         for (int value : arr) {
 
             int currentMax = 0;
-            TrieNode2 current = head;
+            TrieNode current = head;
 
             for (int i = 0; i <= 31; i++) {
                 

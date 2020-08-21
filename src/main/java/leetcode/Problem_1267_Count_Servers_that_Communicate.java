@@ -2,9 +2,6 @@ package leetcode;
 
 public class Problem_1267_Count_Servers_that_Communicate {
 
-}
-
-class Solution {
     public int countServers(int[][] grid) {
         int count = 0;
         int[] rows = new int[grid.length];

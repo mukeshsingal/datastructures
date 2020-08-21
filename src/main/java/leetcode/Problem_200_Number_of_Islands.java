@@ -2,8 +2,6 @@ package leetcode;
 
 public class Problem_200_Number_of_Islands {
 
-}
-class Solution {
     int r = 0;
     int c = 0;
     public int numIslands(char[][] grid) {

@@ -1,4 +1,4 @@
-class Solution {
+class Problem_856_Score_of_Parentheses {
     public int scoreOfParentheses(String S) {
         return func2(S);
         

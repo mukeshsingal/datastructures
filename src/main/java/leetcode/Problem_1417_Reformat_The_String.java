@@ -1,10 +1,6 @@
 package leetcode;
 
 public class Problem_1417_Reformat_The_String {
-    
-}
-
-class Solution {
     public String reformat(String s) {
         char[] newS = new char[s.length()];
 

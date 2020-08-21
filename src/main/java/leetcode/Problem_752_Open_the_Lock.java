@@ -1,8 +1,8 @@
 package leetcode;
 
 import java.util.*;
-
-class Solution {
+import java.util.LinkedList;
+class Problem_752_Open_the_Lock {
     private static char[] prevChar = new char[] { '9', '0', '1', '2', '3', '4', '5', '6', '7', '8' };
     private static char[] currChar = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
     private static char[] nextChar = new char[] { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };

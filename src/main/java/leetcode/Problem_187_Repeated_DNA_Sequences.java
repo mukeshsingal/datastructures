@@ -1,10 +1,12 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class Problem_187_Repeated_DNA_Sequences {
 
-}
-
-class Solution {
     public List<String> findRepeatedDnaSequences(String s) {
        List list= new ArrayList<>();
         

@@ -43,6 +43,6 @@ public class KnapSackProblem {
         int wt[] = new int[]{10, 20, 30};
         int knapSackCapacity = 50;
         int allItemsCount = val.length;
-        System.out.println(knapSackWithoutOverlapping(knapSackCapacity, wt, val, allItemsCount));
+        System.out.println(knapSack(knapSackCapacity, wt, val, allItemsCount));
     }
 }

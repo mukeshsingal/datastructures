@@ -1,10 +1,10 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Problem_1078_Occurrences_After_Bigram {
 
-}
-
-class Solution {
     public String[] findOcurrences(String text, String first, String second) {
         String[] words = text.split(" ");
         List<String> list = new ArrayList<String>();

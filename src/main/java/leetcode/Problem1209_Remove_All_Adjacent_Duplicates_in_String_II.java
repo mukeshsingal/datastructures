@@ -1,6 +1,7 @@
+package leetcode;
 import java.util.Stack;
 
-class Solution {
+class Problem1209_Remove_All_Adjacent_Duplicates_in_String_II {
     public String removeDuplicates(String s, int k) {
         int i = 0, n = s.length(), count[] = new int[n];
         char[] stack = s.toCharArray();
@@ -12,6 +13,7 @@ class Solution {
         return new String(stack, 0, i);
     }
 }
+
 
 class Solution2 {
     public String removeDuplicates(String s, int k) {

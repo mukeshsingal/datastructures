@@ -1,9 +1,10 @@
 package leetcode;
 
-public class Problem_1403_Minimum_Subsequence_in_Non_Increasing_Order {
-}
+import java.util.ArrayList;
+import java.util.List;
 
-class Solution {
+public class Problem_1403_Minimum_Subsequence_in_Non_Increasing_Order {
+
     public List<Integer> minSubsequence(int[] nums) {
 
         List<Integer> res = new ArrayList<>();

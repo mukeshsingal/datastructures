@@ -1,9 +1,9 @@
 package leetcode;
 
+import java.util.HashSet;
+
 public class Problem_929_Unique_Email_Addresses {
-    
-}
-class Solution {
+
     public int numUniqueEmails(String[] emails) {
         HashSet<String> uniqueEmails = new HashSet();
         for(String email : emails) {
