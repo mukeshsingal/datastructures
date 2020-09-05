@@ -2,6 +2,8 @@ package algo.dp;
 
 public class KnapSackProblem {
 
+    private static int[][] memo;
+
     public static int knapSack(int knapSackCapacity, int[] weights, int[] values, int n) {
         if (knapSackCapacity <= 0 || n == 0) {
             return 0;
@@ -15,6 +17,26 @@ public class KnapSackProblem {
                     values[n - 1] + knapSack(knapSackCapacity - weights[n - 1], weights, values, n - 1)
             );
         }
+    }
+
+    public static int knapSackMemo(int[] weights, int[] values, int W, int N) {
+        if (W <= 0 || N == 0) {
+            return 0;
+        }
+
+        if(memo[W][N] != 0) {
+            return memo[W][N];
+        }
+
+        if (weights[N - 1] > W)
+            memo[W][N] = knapSack(W, weights, values, N - 1);
+        else {
+            memo[W][N] =  Math.max(
+                    knapSack(W, weights, values, N - 1), //not included
+                    values[N - 1] + knapSack(W - weights[N - 1], weights, values, N - 1)
+            );
+        }
+        return memo[W][N];
     }
 
     public static int knapSackWithoutOverlapping(int knapSackCapacity, int[] weights, int[] values, int totalItemsCount) {
@@ -39,10 +61,15 @@ public class KnapSackProblem {
     }
 
     public static void main(String args[]) {
+
         int val[] = new int[]{60, 100, 120};
         int wt[] = new int[]{10, 20, 30};
         int knapSackCapacity = 50;
+
+        memo = new int[knapSackCapacity + 1][val.length+1];
         int allItemsCount = val.length;
+
         System.out.println(knapSack(knapSackCapacity, wt, val, allItemsCount));
+        System.out.println(knapSackMemo(wt, val, knapSackCapacity, allItemsCount));
     }
 }
