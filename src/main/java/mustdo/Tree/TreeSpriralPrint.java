@@ -6,45 +6,35 @@ import java.util.Stack;
 
 public class TreeSpriralPrint extends TreeUtil {
     public static void main(String[] args) {
-        modifiedLevelOrderTraversal(1, getBinaryTree());
+        spiralLOT(getBinaryTree());
     }
 
-    public static void modifiedLevelOrderTraversal(int count, Node root) {
+    public static void spiralLOT(Node root) {
 
-        int numberOfNodesAtLevel;
-        int changeDirectionCount = 0;
+        if(root == null) return;
 
-        boolean rightToLeft = false;
+        Stack<Node> s1 = new Stack<>();
+        Stack<Node> s2 = new Stack<>();
 
-        Stack<Node> stack = new Stack<>();
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(root);
+        s1.push(root);
 
-        while (!queue.isEmpty()) {
-            changeDirectionCount++;
-            numberOfNodesAtLevel = queue.size();
 
-            for (int i = 0; i < numberOfNodesAtLevel; i++) {
-                Node temp = queue.poll();
+        while (!s1.isEmpty() || !s2.isEmpty()) {
+            while (!s1.isEmpty()) {
+                Node node = s1.pop();
+                System.out.println(node.key);
 
-                if (rightToLeft)
-                    stack.push(temp);
-                else
-                    System.out.print(temp.key + " ");
+                if(node.right != null) s2.push(node.right);
+                if(node.left != null) s2.push(node.left);
+            }
+            while (!s2.isEmpty()) {
+                Node node = s2.pop();
+                System.out.println(node.key);
 
-                if (temp.left != null) queue.add(temp.left);
-                if (temp.right != null) queue.add(temp.right);
+                if(node.left != null) s1.push(node.left);
+                if(node.right != null) s1.push(node.right);
 
             }
-            if (rightToLeft) {
-                while (!stack.isEmpty()) {
-                    Node temp = stack.pop();
-                    System.out.print(temp.key + " ");
-                }
-            }
-
-            rightToLeft = !rightToLeft;
-            System.out.println();
         }
     }
 }
