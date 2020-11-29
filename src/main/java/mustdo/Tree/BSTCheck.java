@@ -1,20 +1,22 @@
 package mustdo.Tree;
 
-public class BSTCheck extends TreeUtil{
+public class BSTCheck extends TreeUtil {
+
     public static void main(String[] args) {
-        System.out.println(isBst(getBST()));
+        System.out.println(isBST(getBST()));
     }
 
-    static boolean isBst(Node root) {
+    static boolean isBST(Node root) {
         if(root == null) {
             return true;
         }
-        if((root.left != null && root.key < root.left.key)){
+
+        if(root.left != null && root.left.key > root.key)
             return false;
-        }
-        if(root.right != null && root.key > root.right.key) {
+
+        if(root.right != null && root.right.key < root.key)
             return false;
-        }
-        return isBst(root.left) && isBst(root.right);
+
+        return isBST(root.left) && isBST(root.right);
     }
 }
