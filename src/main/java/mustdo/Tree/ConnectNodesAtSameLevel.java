@@ -47,16 +47,17 @@ public class ConnectNodesAtSameLevel {
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
         Node prev = null;
-        while (true) {
-            int nodeCount = queue.size();
-            if (nodeCount <= 0)
-                break;
-            prev = null;
-            while (nodeCount > 0) {
+
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+
+            for (int i =0; i < size; i++) {
                 Node node = queue.poll();
-                if (prev != null) {
+
+                if(prev != null) {
                     prev.horizontal = node;
                 }
+
                 if (node.left != null) {
                     queue.add(node.left);
                 }
@@ -64,8 +65,8 @@ public class ConnectNodesAtSameLevel {
                     queue.add(node.right);
                 }
                 prev = node;
-                nodeCount--;
             }
+            prev = null;
         }
     }
 
