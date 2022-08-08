@@ -25,7 +25,7 @@ A list of LeetCode questions with the corresponding companies sorted by difficul
 | **ID** | **Name** | **Difficulty.Level** | **Companies** |
 | --- | --- | --- | --- |
 | 717 | [1-bit and 2-bit Characters](src/main/java/leetcode/Problem_717_1_bit_and_2_bi_Characters.java) |  Easy | Google |
-| 67 | Add Binary |  Easy | Adobe, Amazon, Facebook, Google, Microsoft |
+| 67 | [Add Binary ](src/main/java/leetcode/Problem_67_Add_Binary.java)|  Easy | Adobe, Amazon, Facebook, Google, Microsoft |
 | 258 | Add Digits |  Easy | Adobe, Apple |
 | 415 | Add Strings |  Easy | Apple, Facebook, Google, Microsoft |
 | 637 | Average of Levels in Binary Tree |  Easy | Amazon, Facebook |
