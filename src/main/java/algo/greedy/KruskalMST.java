@@ -1,6 +1,5 @@
 package algo.greedy;
 
-import javax.xml.bind.SchemaOutputResolver;
 import java.util.Arrays;
 
 /**
