@@ -31,7 +31,7 @@ A list of LeetCode questions with the corresponding companies sorted by difficul
 | 637 | [Average of Levels in Binary Tree](src/main/java/leetcode/Problem_637_Average_of_Levels_in_Binary_Tree.java) |  Easy | Amazon, Facebook |
 | 844 | [Backspace String Compare](src/main/java/leetcode/Problem_844_Backspace_String_Compare.java) |  Easy | Google |
 | 110 | [Balanced Binary Tree](src/main/java/leetcode/Problem_110_Balanced_Binary_Tree.java) |  Easy | Amazon, Google |
-| 682 | Baseball Game |  Easy | Amazon |
+| 682 | [Baseball Game](src/main/java/leetcode/Problem_682_Baseball_Game.java) |  Easy | Amazon |
 | 121 | Best Time to Buy and Sell Stock |  Easy | Facebook |
 | 122 | Best Time to Buy and Sell Stock II |  Easy | Alibaba |
 | 595 | Big Countries |  Easy | Adobe, Amazon, Google |
