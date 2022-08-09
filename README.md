@@ -41,10 +41,10 @@ A list of LeetCode questions with the corresponding companies sorted by difficul
 | 859 | [Buddy Strings](src/main/java/leetcode/Problem_859_Buddy_Strings.java) |  Easy | Google |
 | 70 | [Climbing Stairs](src/main/java/leetcode/Problem_70_Climb_Stairs.java) |  Easy | Adobe, Alibaba, Amazon, Apple, Facebook, Microsoft |
 | 270 | Closest Binary Search Tree Value |  Easy | Google |
-| 175 | Combine Two Tables |  Easy | Adobe, Amazon, Apple, Facebook, Google |
+| 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/submissions/) |  Easy | Adobe, Amazon, Apple, Facebook, Google |
 | 427 | Construct Quad Tree |  Easy | Apple |
-| 217 | Contains Duplicate |  Easy | Amazon |
-| 219 | Contains Duplicate II |  Easy | Adobe, Google |
+| 217 | [Contains Duplicate](src/main/java/leetcode/Problem_217_Contains_Duplicate.java) |  Easy | Amazon |
+| 219 | [Contains Duplicate II](src/main/java/leetcode/Problem_219_Contains_Duplicate_II.java) |  Easy | Adobe, Google |
 | 405 | Convert a Number to Hexadecimal |  Easy | Facebook |
 | 538 | Convert BST to Greater Tree |  Easy | Amazon |
 | 108 | Convert Sorted Array to Binary Search Tree |  Easy | Adobe, Apple |
