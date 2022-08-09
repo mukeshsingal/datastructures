@@ -39,7 +39,7 @@ A list of LeetCode questions with the corresponding companies sorted by difficul
 | 107 | [Binary Tree Level Order Traversal II](src/main/java/leetcode/Problem_107_Binary_Tree_Level_Order_Traversal_II.java) |  Easy | Microsoft |
 | 257 | [Binary Tree Paths](src/main/java/leetcode/Problem_257_Binary_Tree_Paths.java) |  Easy | Amazon, Facebook, Microsoft |
 | 859 | [Buddy Strings](src/main/java/leetcode/Problem_859_Buddy_Strings.java) |  Easy | Google |
-| 70 | Climbing Stairs |  Easy | Adobe, Alibaba, Amazon, Apple, Facebook, Microsoft |
+| 70 | [Climbing Stairs](src/main/java/leetcode/Problem_70_Climb_Stairs.java) |  Easy | Adobe, Alibaba, Amazon, Apple, Facebook, Microsoft |
 | 270 | Closest Binary Search Tree Value |  Easy | Google |
 | 175 | Combine Two Tables |  Easy | Adobe, Amazon, Apple, Facebook, Google |
 | 427 | Construct Quad Tree |  Easy | Apple |
