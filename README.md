@@ -37,8 +37,8 @@ A list of LeetCode questions with the corresponding companies sorted by difficul
 | 595 | [Big Countries](https://leetcode.com/problems/big-countries/) |  Easy | Adobe, Amazon, Google |
 | 704 | [Binary Search](src/main/java/leetcode/Problem_704_Binary_Search.java) |  Easy | Google |
 | 107 | [Binary Tree Level Order Traversal II](src/main/java/leetcode/Problem_107_Binary_Tree_Level_Order_Traversal_II.java) |  Easy | Microsoft |
-| 257 | Binary Tree Paths |  Easy | Amazon, Facebook, Microsoft |
-| 859 | Buddy Strings |  Easy | Google |
+| 257 | [Binary Tree Paths](src/main/java/leetcode/Problem_257_Binary_Tree_Paths.java) |  Easy | Amazon, Facebook, Microsoft |
+| 859 | [Buddy Strings](src/main/java/leetcode/Problem_859_Buddy_Strings.java) |  Easy | Google |
 | 70 | Climbing Stairs |  Easy | Adobe, Alibaba, Amazon, Apple, Facebook, Microsoft |
 | 270 | Closest Binary Search Tree Value |  Easy | Google |
 | 175 | Combine Two Tables |  Easy | Adobe, Amazon, Apple, Facebook, Google |

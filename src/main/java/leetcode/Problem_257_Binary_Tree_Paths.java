@@ -3,30 +3,34 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
+//https://leetcode.com/problems/binary-tree-paths/
 public class Problem_257_Binary_Tree_Paths {
 
-    StringBuilder b = new StringBuilder();
-    ArrayList<String> strings = new ArrayList<>();
+    StringBuilder path = new StringBuilder();
+    ArrayList<String> result = new ArrayList<>();
+
     public List<String> binaryTreePaths(TreeNode root) {
 
         if(root == null) {
-            return strings;
+            return result;
         }
 
         if(root.left == null && root.right ==null) {
-            int l = b.length();
-            b.append(root.val);
-            strings.add(b.toString());
-            b.delete(l, b.length());
+            int l = path.length();
+            path.append(root.val);
+            result.add(path.toString());
+            path.delete(l, path.length());
         }
 
-        int l = b.length();
-        b.append(root.val + "->");
+        int l = path.length();
+
+        path.append(root.val + "->");
 
         binaryTreePaths(root.left);
         binaryTreePaths(root.right);
 
-        b.delete(l, b.length());
-        return strings;
+        path.delete(l, path.length());
+
+        return result;
     }
 }
