@@ -1,33 +1,19 @@
 package leetcode;
 
 import java.util.Arrays;
-
+//https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 class Problem_121_Best_Time_to_Buy_and_Sell_Stock {
     public int maxProfit(int[] prices) {
-        int [] minima = Arrays.copyOf(prices, prices.length);
-        int [] maxima = Arrays.copyOf(prices, prices.length);
+        int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
 
-        int minimumSoFar = Integer.MAX_VALUE;
-        for(int i = 0; i < minima.length; i++) {
-            if(minimumSoFar >  minima[i])
-                minimumSoFar = minima[i];
-            else
-                minima[i] = minimumSoFar;
+        for(int i = 0; i < prices.length; i++) {
+            if(prices[i] < minPrice) {
+                minPrice = prices[i];
+            }
+            else if(prices[i] - minPrice > maxProfit)
+                maxProfit = prices[i] - minPrice;
         }
-
-        int maxmumSoFar = Integer.MIN_VALUE;
-        for(int i = minima.length -1; i >= 0; i--) {
-            if(maxmumSoFar <  maxima[i])
-                maxmumSoFar = maxima[i];
-            else
-                maxima[i] = maxmumSoFar;
-        }
-
-        int maxProfile = 0;
-        for(int i = 0; i < minima.length; i++) {
-            if(maxima[i] -  minima[i] > maxProfile)
-                maxProfile = maxima[i] -  minima[i];
-        }
-        return maxProfile;
+        return maxProfit;
     }
 }

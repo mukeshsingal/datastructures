@@ -32,7 +32,7 @@ A list of LeetCode questions with the corresponding companies sorted by difficul
 | 844 | [Backspace String Compare](src/main/java/leetcode/Problem_844_Backspace_String_Compare.java) |  Easy | Google |
 | 110 | [Balanced Binary Tree](src/main/java/leetcode/Problem_110_Balanced_Binary_Tree.java) |  Easy | Amazon, Google |
 | 682 | [Baseball Game](src/main/java/leetcode/Problem_682_Baseball_Game.java) |  Easy | Amazon |
-| 121 | Best Time to Buy and Sell Stock |  Easy | Facebook |
+| 121 | [Best Time to Buy and Sell Stock](src/main/java/leetcode/Problem_121_Best_Time_to_Buy_and_Sell_Stock.java) |  Easy | Facebook |
 | 122 | Best Time to Buy and Sell Stock II |  Easy | Alibaba |
 | 595 | Big Countries |  Easy | Adobe, Amazon, Google |
 | 704 | Binary Search |  Easy | Google |
