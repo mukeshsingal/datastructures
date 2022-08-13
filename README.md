@@ -47,10 +47,10 @@ A list of LeetCode questions with the corresponding companies sorted by difficul
 | 219 | [Contains Duplicate II](src/main/java/leetcode/Problem_219_Contains_Duplicate_II.java) |  Easy | Adobe, Google |
 | 405 | Convert a Number to Hexadecimal |  Easy | Facebook |
 | 538 | [Convert BST to Greater Tree](src/main/java/leetcode/Problem_538_Convert_BST_to_Greater_Tree.java) |  Easy | Amazon |
-| 108 | Convert Sorted Array to Binary Search Tree |  Easy | Adobe, Apple |
-| 38 | Count and Say |  Easy | Adobe, Amazon, Google, Microsoft |
-| 696 | Count Binary Substrings |  Easy | Adobe |
-| 204 | Count Primes |  Easy | Adobe, Amazon, Apple, Google, Microsoft |
+| 108 | [Convert Sorted Array to Binary Search Tree](src/main/java/leetcode/Problem_108_Convert_Sorted_Array_to_Binary_Search_Tree.java) |  Easy | Adobe, Apple |
+| 38 | [Count and Say](src/main/java/leetcode/Problem_38_Count_and_Say.java) |  Easy | Adobe, Amazon, Google, Microsoft |
+| 696 | [Count Binary Substrings](src/main/java/leetcode/Problem_696_Count_Binary_Substrings.java) |  Easy | Adobe |
+| 204 | [Count Primes](src/main/java/leetcode/Problem_204_Count_Primes.java) |  Easy | Adobe, Amazon, Apple, Google, Microsoft |
 | 183 | Customers Who Never Order |  Easy | Amazon |
 | 237 | Delete Node in a Linked List |  Easy | Apple |
 | 706 | Design HashMap |  Easy | Adobe, Amazon, Apple, Microsoft |
