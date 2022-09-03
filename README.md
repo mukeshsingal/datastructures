@@ -17,6 +17,14 @@
 
 5. [LinkedList](resources/algorithms/LinkedList/linkedList.md)
 
+Tips:
+
+1. Create a ArrayList to Integer Array
+
+```java
+ List<Integer> results = new ArrayList<Integer>();
+ return results.stream().mapToInt(i->i).toArray();
+ ```
 
 # Leetcode Questions By Companies
 
